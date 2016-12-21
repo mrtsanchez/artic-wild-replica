@@ -7,20 +7,22 @@
   flex-wrap: wrap;
   align-items: center;
     ul {
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-    align-items: baseline;
-    margin: 0 4em;
-      li {
-        flex-direction: row;
-        list-style: none;
-        &:hover {
-          color: $secondary-color;
-          cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      width: 50%;
+      align-items: baseline;
+      margin: 0 4em;
+        li {
+          flex-direction: row;
+          list-style: none;
+          text-transform: uppercase;
+          &:hover {
+            color: $secondary-color;
+            cursor: pointer;
+          }
         }
       }
-    }
+
       @media only screen and (#{$break-tablet}) {
         flex-direction: column;
         ul {

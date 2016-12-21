@@ -34,7 +34,8 @@ body {
     margin: 0 4em; }
     .navbar ul li {
       flex-direction: row;
-      list-style: none; }
+      list-style: none;
+      text-transform: uppercase; }
       .navbar ul li:hover {
         color: #dc7725;
         cursor: pointer; }
@@ -67,6 +68,13 @@ body {
     align-self: center;
     align-items: center;
     text-align: center; }
+    .header .hero h1 {
+      text-transform: uppercase;
+      font-size: 7em;
+      margin-top: 0px; }
+    .header .hero h3 {
+      text-transform: uppercase;
+      margin-bottom: 0px; }
 
 .gallery {
   display: flex;
@@ -150,14 +158,27 @@ body {
   overflow: hidden; }
 
 .row {
-  display: flex;
-  flex-direction: row;
-  height: 420px; }
+  display: flex; }
+  @media only screen and (max-width: 690px) {
+    .row {
+      flex-direction: column; }
+      .row [class*="tile"] {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        flex: 1;
+        margin: 15px;
+        height: 250px;
+        display: flex;
+        flex-wrap: wrap; }
+        .row [class*="tile"]:last-child {
+          margin-right: 0; } }
 
 h1 {
   font-family: "Playfair Display", sans-serif; }
 
-h2 {
+h3 {
   font-family: "Fjalla One", sans-serif; }
 
 li {
