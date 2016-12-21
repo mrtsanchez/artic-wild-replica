@@ -1,23 +1,170 @@
-/*
-Errno::ENOENT: No such file or directory @ rb_sysopen - application.scss
+html {
+  box-sizing: border-box; }
 
-Backtrace:
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:484:in `read'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:484:in `update_stylesheet'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:294:in `watch'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin.rb:109:in `method_missing'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
-/usr/local/bin/sass:23:in `load'
-/usr/local/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - application.scss"; }
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column; }
+
+.navbar {
+  width: 100%;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center; }
+  .navbar ul {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    align-items: baseline;
+    margin: 0 4em; }
+    .navbar ul li {
+      flex-direction: row;
+      list-style: none; }
+      .navbar ul li:hover {
+        color: #dc7725;
+        cursor: pointer; }
+  @media only screen and (max-width: 915px) {
+    .navbar {
+      flex-direction: column; }
+      .navbar ul {
+        width: 75%; } }
+  @media only screen and (max-width: 690px) {
+    .navbar ul {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      padding: 0; } }
+
+.header {
+  display: flex;
+  flex-direction: column;
+  content: "";
+  background-image: url("../img/hero-slide1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  height: 50rem;
+  width: 100vw;
+  padding: 0; }
+  .header .hero {
+    align-self: center;
+    align-items: center;
+    text-align: center; }
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
+  .gallery .large-img {
+    flex: 2;
+    flex-basis: 480px;
+    height: 420px;
+    display: flex;
+    justify-content: flex-start; }
+    .gallery .large-img h3 {
+      text-transform: uppercase;
+      align-self: flex-end;
+      margin: 10px;
+      border-top: 3px solid #dc7725; }
+  .gallery .small-img {
+    flex: 1;
+    flex: 240px;
+    height: 420px;
+    display: flex;
+    justify-content: flex-start; }
+    .gallery .small-img h3 {
+      text-transform: uppercase;
+      align-self: flex-end;
+      margin: 10px;
+      border-top: 3px solid #dc7725; }
+
+.tile-1 {
+  content: "";
+  background-image: url("../img/home-raft.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden; }
+
+.tile-2 {
+  content: "";
+  background-image: url("../img/home-custom.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden; }
+
+.tile-1 {
+  content: "";
+  background-image: url("../img/home-basecamp.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden; }
+
+.tile-2 {
+  content: "";
+  background-image: url("../img/home-backpacking.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden; }
+
+.tile-3 {
+  content: "";
+  background-image: url("../img/home-canoe.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden; }
+
+.tile-4 {
+  content: "";
+  background-image: url("../img/home-photo.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden; }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  height: 420px; }
+
+h1 {
+  font-family: "Playfair Display", sans-serif; }
+
+h2 {
+  font-family: "Fjalla One", sans-serif; }
+
+li {
+  letter-spacing: 2px;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 13px;
+  line-height: 50px;
+  padding-right: 30px; }
+
+/*# sourceMappingURL=application.css.map */

@@ -1,0 +1,15 @@
+h1 {
+  font-family: $titles-font-family;
+}
+
+h2 {
+  font-family: $secondary-font-family;
+}
+
+li {
+  letter-spacing: 2px;
+  font-family: $secondary-font-family;
+  font-size: 13px;
+  line-height: 50px;
+  padding-right: 30px;
+}

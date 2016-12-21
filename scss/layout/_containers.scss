@@ -1,7 +1,7 @@
 .header {
   display: flex;
   flex-direction: column;
-  @include background-img("../img/hero-slide-1.jpg");
+  @include background-img("../img/hero-slide1.jpg");
   height: 50rem;
   width: 100vw;
   padding: 0;
@@ -24,7 +24,7 @@
     display: flex;
     justify-content: flex-start;
     h3 {
-      @include gallery-text;
+      @include gallery-title;
     }
   }
 
@@ -35,7 +35,7 @@
     display: flex;
     justify-content: flex-start;
     h3 {
-      @include gallery-text;
+      @include gallery-title;
     }
   }
 }
@@ -151,4 +151,4 @@
   // .tile6 {
   //   @include tile(2, $img7-big);
   // }
-}
+// }

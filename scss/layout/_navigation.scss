@@ -9,9 +9,9 @@
     ul {
     display: flex;
     justify-content: space-between;
-    width: 65%;
+    width: 50%;
     align-items: baseline;
-    margin: 0 3em;
+    margin: 0 4em;
       li {
         flex-direction: row;
         list-style: none;
@@ -21,20 +21,18 @@
         }
       }
     }
-
-      // @media only screen and (#{$break-tablet}) {
-      //   flex-direction: column;
-      //   ul {
-      //     width: 75%;
-      //   }
-      // }
-      // @media only screen and (#{$break-mobile}) {
-      //   ul{
-      //     display: none;
-      //     flex-direction: column;
-      //     align-items: center;
-      //     padding: 0;
-      //   }
-
-    // }
-  }
+      @media only screen and (#{$break-tablet}) {
+        flex-direction: column;
+        ul {
+          width: 75%;
+        }
+      }
+      @media only screen and (#{$break-mobile}) {
+        ul{
+          display: none;
+          flex-direction: column;
+          align-items: center;
+          padding: 0;
+        }
+    }
+}
