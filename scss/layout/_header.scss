@@ -19,8 +19,32 @@
       text-transform: uppercase;
       margin-bottom: 0px;
     }
+    .main-divider {
+      width: 250px;
+      height: 5px;
+      margin: -25px auto;
+      background-color: $base-text-color;
+    }
+    button {
+      background: $secondary-color;
+      color: $base-text-color;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-family: $secondary-font-family;
+      letter-spacing: 2px;
+      text-align: center;
+      border: none;
+      padding: 20px 30px;
+    }
+    .button-arrow {
+      margin-top: 0;
+      padding-bottom: 3px;
+      background: url('../img/btn-viewmoredown.png') bottom center no-repeat;
+      height: 5px;
+    }
     .play-button {
       @include play-background;
+      margin-top: 50px;
       img {
         width: 60px;
         padding: 20px 0px 20px 10px;
