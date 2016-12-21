@@ -6,6 +6,12 @@
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
+    .logo {
+      img {
+        height: 3em;
+        margin-left: 20px;
+      }
+    }
     ul {
       display: flex;
       justify-content: space-between;

@@ -14,3 +14,15 @@
   position: relative;
   overflow: hidden;
 }
+
+@mixin play-background {
+  background-color: rgba(255,255,255,0.4);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  display: block;
+  transition: #{$hover};
+}

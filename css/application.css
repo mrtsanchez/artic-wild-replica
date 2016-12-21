@@ -18,39 +18,6 @@ body {
   display: flex;
   flex-direction: column; }
 
-.navbar {
-  width: 100%;
-  margin: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center; }
-  .navbar ul {
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-    align-items: baseline;
-    margin: 0 4em; }
-    .navbar ul li {
-      flex-direction: row;
-      list-style: none;
-      text-transform: uppercase; }
-      .navbar ul li:hover {
-        color: #dc7725;
-        cursor: pointer; }
-  @media only screen and (max-width: 915px) {
-    .navbar {
-      flex-direction: column; }
-      .navbar ul {
-        width: 75%; } }
-  @media only screen and (max-width: 690px) {
-    .navbar ul {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      padding: 0; } }
-
 .header {
   display: flex;
   flex-direction: column;
@@ -75,6 +42,59 @@ body {
     .header .hero h3 {
       text-transform: uppercase;
       margin-bottom: 0px; }
+    .header .hero .play-button {
+      background-color: rgba(255, 255, 255, 0.4);
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
+      display: block;
+      transition: all 400ms ease-in-out; }
+      .header .hero .play-button img {
+        width: 60px;
+        padding: 20px 0px 20px 10px; }
+    .header .hero .play-button:hover {
+      transform: scale(1.3);
+      transition: all 400ms ease-in-out;
+      background-color: rgba(255, 255, 255, 0.7); }
+
+.navbar {
+  width: 100%;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center; }
+  .navbar .logo img {
+    height: 3em;
+    margin-left: 20px; }
+  .navbar ul {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    align-items: baseline;
+    margin: 0 4em; }
+    .navbar ul li {
+      flex-direction: row;
+      list-style: none;
+      text-transform: uppercase; }
+      .navbar ul li:hover {
+        color: #dc7725;
+        cursor: pointer; }
+  @media only screen and (max-width: 915px) {
+    .navbar {
+      flex-direction: column; }
+      .navbar ul {
+        width: 75%; } }
+  @media only screen and (max-width: 690px) {
+    .navbar ul {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      padding: 0; } }
 
 .gallery {
   display: flex;
@@ -102,6 +122,24 @@ body {
       align-self: flex-end;
       margin: 10px;
       border-top: 3px solid #dc7725; }
+
+.row {
+  display: flex; }
+  @media only screen and (max-width: 915px) {
+    .row {
+      flex-direction: column; }
+      .row [class*="tile"] {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        flex: 1;
+        margin: 15px;
+        height: 250px;
+        display: flex;
+        flex-wrap: wrap; }
+        .row [class*="tile"]:last-child {
+          margin-right: 0; } }
 
 .tile-1 {
   content: "";
@@ -156,24 +194,6 @@ body {
   background-repeat: no-repeat;
   position: relative;
   overflow: hidden; }
-
-.row {
-  display: flex; }
-  @media only screen and (max-width: 690px) {
-    .row {
-      flex-direction: column; }
-      .row [class*="tile"] {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 100%;
-        flex: 1;
-        margin: 15px;
-        height: 250px;
-        display: flex;
-        flex-wrap: wrap; }
-        .row [class*="tile"]:last-child {
-          margin-right: 0; } }
 
 h1 {
   font-family: "Playfair Display", sans-serif; }
