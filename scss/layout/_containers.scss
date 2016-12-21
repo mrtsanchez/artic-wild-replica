@@ -34,11 +34,11 @@
       width: 50px;
       margin: 0 25px;
     }
-    .circle-btn:hover {
-      transform: #{$scale};
-      transition: #{$hover};
-      background-color: opacify($transparent-dark, .2);
-    }
+  }
+  button:hover {
+    transform: #{$scale};
+    transition: #{$hover};
+    background-color: opacify($transparent-dark, .2);
   }
 
 }

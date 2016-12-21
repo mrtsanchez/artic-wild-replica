@@ -29,6 +29,9 @@
           }
         }
       }
+      .menu-arrow {
+        background: url('../img/btn-navarrow.png') center right no-repeat;
+      }
 
       @media only screen and (#{$break-tablet}) {
         .logo {
@@ -74,6 +77,8 @@
       }
       li:last-child {
         color: $secondary-color;
+        border-left: 1px solid #5d5d5a;
+        padding-left: 20px;
       }
   }
   a {
@@ -84,5 +89,10 @@
     color: $grey;
     font-size: 1.3em;
   }
-
 }
+
+  #menu-more {
+    padding-right: 30px;
+    background: url('../img/btn-categoriesarrow.png') center right no-repeat;
+    margin-left: 15px;
+  }
