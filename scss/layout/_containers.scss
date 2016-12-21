@@ -1,0 +1,106 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  @include background-img("../img/hero-slide-1.jpg");
+  height: 50rem;
+  width: 100vw;
+  padding: 0;
+  .hero {
+    align-self: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+
+.row {
+  display: flex;
+  flex-direction: row;
+  height: 420px;
+  // @media screen and #{$dropdown-break} {
+  //   flex-wrap: wrap;
+  //   .tile1 {
+  //     width: 100%;
+  //     height: 420px;
+  //   }
+  //   .tile2 {
+  //     width: 50%;
+  //     height: 420px;
+  //   }
+  //   .tile3 {
+  //     width: 50%;
+  //     height: 420px;
+  //   }
+  // }
+//   @media screen and #{$break-mobile} {
+//     .tile1 {
+//       width: 100%;
+//       height: 420px;
+//     }
+//     .tile2 {
+//       width: 100%;
+//       height: 420px;
+//     }
+//     .tile3 {
+//       width: 100%;
+//       height: 420px;
+//     }
+//   }
+//   .tile1 {
+//     @include tile(2, $img2-big);
+//   }
+//   .tile2 {
+//     @include tile(1, $img3);
+//   }
+//   .tile3 {
+//     @include tile(1, $img4);
+//   }
+}
+
+// .row2 {
+//   display: flex;
+//   flex-direction: row;
+//   height: 420px;
+  // @media screen and #{$dropdown-break} {
+  //   flex-wrap: wrap;
+  //   .tile4 {
+  //     width: 50%;
+  //     height: 420px;
+  //     margin-top: 420px;
+  //   }
+  //   .tile5 {
+  //     width: 50%;
+  //     height: 420px;
+  //     margin-top: 420px;
+  //   }
+  //   .tile6 {
+  //     width: 100%;
+  //     height: 420px;
+  //   }
+  // }
+  // @media screen and #{$break-mobile} {
+  //   .tile4 {
+  //     width: 100%;
+  //     height: 420px;
+  //     margin-top: 840px;
+  //   }
+  //   .tile5 {
+  //     width: 100%;
+  //     height: 420px;
+  //     margin-top: 0;
+  //   }
+  //   .tile6 {
+  //     width: 100%;
+  //     height: 420px;
+  //   }
+  // }
+  // .tile4 {
+  //   @include tile(1, $img5);
+  // }
+  // .tile5 {
+  //   @include tile(1, $img6);
+  // }
+  // .tile6 {
+  //   @include tile(2, $img7-big);
+  // }
+}
