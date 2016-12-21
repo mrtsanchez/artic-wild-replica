@@ -8,6 +8,12 @@
 
 _This is a replica of articwild.com, using Saas and Flexbox_
 
+_Assignment Objectives_
+
+* Flexbox is used for laying out page elements, including the navigation bar(s) and image gallery.
+* Page is responsive (at least one breakpoint).
+* Gallery incorporates transition or transform for effect.
+
 ## Setup/Installation Requirements
 
 1. Download this repo using your terminal: git clone https://github.com/mrtsanchez/artic-wild-replica
