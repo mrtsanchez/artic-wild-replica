@@ -26,6 +26,8 @@ _For help, contact:_
 
 * HTML5
 * CSS3
+* JavaScript with jQuery 3.1
+* Sass
 * Bourbon
 * Neat
 * Flexbox
