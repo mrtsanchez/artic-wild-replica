@@ -24,6 +24,23 @@
       @include gallery-title;
     }
   }
+
+  button {
+    @include circle-btn();
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 42%;
+    img {
+      width: 50px;
+      margin: 0 25px;
+    }
+    .circle-btn:hover {
+      transform: #{$scale};
+      transition: #{$hover};
+      background-color: opacify($transparent-dark, .2);
+    }
+  }
+
 }
 
 .row {
@@ -46,18 +63,18 @@
 }
 
 .tile-2{
-  @include background-img("../img/home-custom.jpg");
-}
-
-.tile-1{
   @include background-img("../img/home-basecamp.jpg");
 }
-.tile-2{
+
+.tile-3{
   @include background-img("../img/home-backpacking.jpg");
 }
-.tile-3{
+.tile-4{
   @include background-img("../img/home-canoe.jpg");
 }
-.tile-4{
+.tile-5{
   @include background-img("../img/home-photo.jpg");
+}
+.tile-6{
+  @include background-img("../img/home-custom.jpg");
 }

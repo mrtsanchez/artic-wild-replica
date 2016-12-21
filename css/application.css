@@ -177,6 +177,26 @@ body {
       align-self: flex-end;
       margin: 10px;
       border-top: 3px solid #dc7725; }
+  .gallery button {
+    background-color: rgba(52, 52, 51, 0.5);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: 25px;
+    transition: all 400ms ease-in-out;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 42%; }
+    .gallery button img {
+      width: 50px;
+      margin: 0 25px; }
+    .gallery button img {
+      width: 50px;
+      margin: 0 25px; }
+    .gallery button .circle-btn:hover {
+      transform: scale(1.3);
+      transition: all 400ms ease-in-out;
+      background-color: rgba(52, 52, 51, 0.7); }
 
 .row {
   display: flex; }
@@ -207,25 +227,7 @@ body {
 
 .tile-2 {
   content: "";
-  background-image: url("../img/home-custom.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  overflow: hidden; }
-
-.tile-1 {
-  content: "";
   background-image: url("../img/home-basecamp.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  overflow: hidden; }
-
-.tile-2 {
-  content: "";
-  background-image: url("../img/home-backpacking.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -234,7 +236,7 @@ body {
 
 .tile-3 {
   content: "";
-  background-image: url("../img/home-canoe.jpg");
+  background-image: url("../img/home-backpacking.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -243,7 +245,25 @@ body {
 
 .tile-4 {
   content: "";
+  background-image: url("../img/home-canoe.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden; }
+
+.tile-5 {
+  content: "";
   background-image: url("../img/home-photo.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden; }
+
+.tile-6 {
+  content: "";
+  background-image: url("../img/home-custom.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
