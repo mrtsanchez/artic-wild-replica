@@ -12,6 +12,54 @@
   }
 }
 
+.gallery {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  .large-img {
+    flex: 2;
+    flex-basis: 480px;
+    height: 420px;
+    display: flex;
+    justify-content: flex-start;
+    h3 {
+      @include gallery-text;
+    }
+  }
+
+  .small-img {
+    flex: 1;
+    flex: 240px;
+    height: 420px;
+    display: flex;
+    justify-content: flex-start;
+    h3 {
+      @include gallery-text;
+    }
+  }
+}
+
+.tile-1{
+  @include background-img("../img/home-raft.jpg");
+}
+
+.tile-2{
+  @include background-img("../img/home-custom.jpg");
+}
+
+.tile-1{
+  @include background-img("../img/home-basecamp.jpg");
+}
+.tile-2{
+  @include background-img("../img/home-backpacking.jpg");
+}
+.tile-3{
+  @include background-img("../img/home-canoe.jpg");
+}
+.tile-4{
+  @include background-img("../img/home-photo.jpg");
+}
 
 .row {
   display: flex;

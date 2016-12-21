@@ -1,0 +1,40 @@
+.navbar {
+  width: 100%;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+    ul {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    align-items: baseline;
+    margin: 0 3em;
+      li {
+        flex-direction: row;
+        list-style: none;
+        &:hover {
+          color: $secondary-color;
+          cursor: pointer;
+        }
+      }
+    }
+
+      // @media only screen and (#{$break-tablet}) {
+      //   flex-direction: column;
+      //   ul {
+      //     width: 75%;
+      //   }
+      // }
+      // @media only screen and (#{$break-mobile}) {
+      //   ul{
+      //     display: none;
+      //     flex-direction: column;
+      //     align-items: center;
+      //     padding: 0;
+      //   }
+
+    // }
+  }
